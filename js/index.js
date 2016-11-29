@@ -3,7 +3,7 @@ var myApp=angular.module("myApp",[]);
 
 
 myApp.controller("countrycontroller",function(){
-   this.name="hello country";
+   this.name="hello country hello citys";
 })
 
 myApp.controller("provincecontroller",function(){
