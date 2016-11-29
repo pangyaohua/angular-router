@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>iframe</title>
+</head>
+<link rel="stylesheet" href="index.css">
+<body ng-App="myApp">
+	  <div class="container" ng-controller="countrycontroller as mycon">
+	  		<h1>{{mycon.name}}</h1>
+	  		<div class="province" ng-controller="provincecontroller as procon">
+	  		  <h2>{{mycon.name}}--{{procon.name}}</h2>
+	  			<div class="city" ng-controller="citycontroller as city">
+	  				<h3>{{mycon.name}}--{{procon.name}}--{{city.name}}</h3>
+	  			</div>
+	  		</div>
+	  	
+	  	<div class="content">
+	  	    <div id="content">
+	  			<div class="con-wrapper">
+	  				<iframe src="./tpl/default.html"  name="page" frameborder="0" width="100%" height="100%"></iframe>
+	  			</div>
+	  		</div>
+	  		<div class="left">
+	  			<ul>
+	  				<li><a href="./tpl/home.html" target="page">home</a></li>
+	  				<li><a href="./tpl/language.html" target="page">language</a></li>
+	  				<li><a href="./tpl/cont.html" target="page">cont</a></li>
+	  				<li><a href="./tpl/about.html" target="page">about</a></li>
+	  			</ul>
+	  		</div>
+	  		
+	  	</div>
+	  </div>
+	  
+	  <script src="js/angular.min.js"></script>
+
+	  <script src="js/index.js"></script>
+</body>
+</html>

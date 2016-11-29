@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>iframe</title>
+</head>
+<style>
+	.left li{
+		cursor: pointer;
+	}
+</style>
+<link rel="stylesheet" href="index.css">
+<body ng-App="myApp">
+	<div class="container" ng-controller="countrycontroller">
+  		<div class="head">
+  			<h1></h1>
+  		</div>
+	  	
+	  	<div class="content">
+	  	    <div id="content">
+	  			<div class="con-wrapper">
+	  			   <div class="box" ng-include="page">
+	  			   	   
+	  			   </div>
+	  			</div>
+	  		</div>
+	  		<div class="left">
+	  			<ul>
+	  				<li ng-click="goPage('home')">home</li>
+	  				<li ng-click="goPage('language')">language</li>
+	  				<li ng-click="goPage('cont')">cont</li>
+	  				<li ng-click="goPage('about')">about</li>
+	  			</ul>
+	  		</div>
+	  		
+	  	</div>
+	  </div>
+	  
+	  <script src="js/angular.min.js"></script>
+
+	  <script src="js/nginclude.js"></script>
+</body>
+</html>
