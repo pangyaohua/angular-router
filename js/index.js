@@ -11,5 +11,5 @@ myApp.controller("provincecontroller",function(){
 })
 
 myApp.controller("citycontroller",function(){
-   this.name="hello city";
+   this.name="hello city hello wuan";
 })
